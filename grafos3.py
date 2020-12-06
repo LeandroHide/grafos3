@@ -86,6 +86,7 @@ class Grafos:
     
             fluxoMaximo += fluxoP
 
+        print("Valor do fluxo maximo: ", end = "")
         print(fluxoMaximo)
 
 
@@ -191,8 +192,15 @@ class Grafos:
         return [True, mate, d]
 
 
+print("Exemplo fluxo maximo:")
 
-grafo2 = Grafos()
-grafo2.ler("C:\Programmer\Python\Grafos\emparelhamento_maximo\gr128_50.gr")
-grafo2.hopcroft_karp()
+fluxoMaximoEx1 = Grafos()
+fluxoMaximoEx1.ler("Exemplos/fluxo_maximo/db128.gr")
+fluxoMaximoEx1.ford_fulkerson()
 
+print()
+print("Exemplo emparelhamento maximo:")
+
+emparelhamentoEx1 = Grafos()
+emparelhamentoEx1.ler("Exemplos/emparelhamento_maximo/gr128_10.gr")
+emparelhamentoEx1.hopcroft_karp()

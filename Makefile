@@ -9,4 +9,4 @@ help:
 	@echo "------------------------------------"
 	
 run:
-	${PYTHON} grafos2.py
+	${PYTHON} grafos3.py
